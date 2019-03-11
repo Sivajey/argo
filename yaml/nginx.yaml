@@ -17,7 +17,7 @@ spec:
         run: nginx
     spec:
       containers:
-      - image: nginx:1.91
+      - image: nginx:1.78
         name: nginx
         resources: {}
 status: {}
