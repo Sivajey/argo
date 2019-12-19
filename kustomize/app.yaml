@@ -4,6 +4,7 @@ metadata:
   creationTimestamp: null
   labels:
     run: myapp
+    linkerd.io/inject: enabled
   name: myapp
 spec:
   replicas: 1
