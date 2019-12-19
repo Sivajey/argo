@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    run: myapp
+  name: myapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: myapp
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: myapp
+    spec:
+      containers:
+      - image: core.harbor.k8sdevops.site/demo/repo:getting-started
+        name: myapp
+        resources: {}
+status: {}
