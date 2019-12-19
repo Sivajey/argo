@@ -20,5 +20,7 @@ spec:
       containers:
         - image: core.harbor.k8sdevops.site/demo/repo:getting-started
           name: myapp
+          ports:
+            - containerPort: 8080
           resources: {}
 status: {}
