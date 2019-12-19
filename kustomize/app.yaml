@@ -2,9 +2,10 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   creationTimestamp: null
+  annotations:
+    linkerd.io/inject: enabled
   labels:
     run: myapp
-    linkerd.io/inject: enabled
   name: myapp
 spec:
   replicas: 1
