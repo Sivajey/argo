@@ -20,12 +20,5 @@ spec:
       containers:
         - image: core.harbor.k8sdevops.site/demo/repo:getting-started
           name: myapp
-          args:
-            [
-              /bin/sh,
-              -c,
-              ./ulmaceae,
-              "i=0; while true; do curl localhost:8080 ; sleep 5; done",
-            ]
           resources: {}
 status: {}
