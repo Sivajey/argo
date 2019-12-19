@@ -24,7 +24,8 @@ spec:
             [
               /bin/sh,
               -c,
-              "i=0; while true; do ./ulmaceae; curl localhost:8080 ; sleep 5; done",
+              ./ulmaceae,
+              "i=0; while true; do curl localhost:8080 ; sleep 5; done",
             ]
           resources: {}
 status: {}
